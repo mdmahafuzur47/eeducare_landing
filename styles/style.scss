@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 1s ease;
+  font-family: "Jost", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  user-select: none;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+  .mainContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    @media (max-width: 700px) {
+      flex-direction: column;
+      height: auto;
+      gap: 40px;
+    }
+    .div-1,
+    .div-2 {
+      height: 100%;
+      width: 100%;
+    }
+    .div-1 {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: url("/accets/Back_Edu.png");
+      .mainImgContainer {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        img {
+          perspective: 500px;
+          height: 300px;
+          width: 300px;
+          animation: rotateAnimation 3s linear;
+          -webkit-user-drag: none;
+        }
+      }
+      .mainContent {
+        p {
+          height: 20px;
+          opacity: 1;
+          transition: all 2s ease-in-out 1s;
+          font-size: 20px;
+          text-align: center;
+          margin: 0 10px;
+        }
+        button {
+          opacity: 1;
+          position: relative;
+          transition: all 2s ease-in-out 2s;
+          font-size: 20px;
+          text-align: center;
+          margin: 0 10px;
+          display: block;
+          margin: 20px auto;
+          border-radius: 8px;
+          border: none;
+          background-size: 100% 100%;
+          background-position: 0px 0px, 0px 0px;
+          background-image: radial-gradient(
+              142% 91% at -6% 74%,
+              #ff0049ff 1%,
+              #ff000000 99%
+            ),
+            repeating-radial-gradient(
+              142% 91% at 95% 102%,
+              #970000ff 0%,
+              #ff0000ff 65%
+            );
+          color: white;
+          font-weight: bold;
+          padding: 10px 20px;
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            transform: scale(110%);
+          }
+          &:active {
+            transform: scale(90%);
+            background-image: radial-gradient(
+                142% 91% at -6% 74%,
+                #ff0049ff 1%,
+                #ff000000 99%
+              ),
+              repeating-radial-gradient(
+                142% 91% at 80% 90%,
+                #970000ff 0%,
+                #ff0000ff 65%
+              );
+          }
+        }
+      }
+    }
+    .div-2 {
+      height: 100%;
+      overflow: hidden;
+      flex: 1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -webkit-user-drag: none;
+      }
+    }
+  }
+  .displayLoader {
+    position: sticky;
+    top: 0;
+    background: #ffff;
+    .div-2 {
+      flex: 0;
+    }
+    .div-1 {
+      flex: 2;
+      .mainImgContainer {
+        img {
+          width: 250px;
+          -webkit-user-drag: none;
+        }
+      }
+      .mainContent {
+        p,
+        button {
+          height: 0;
+          overflow: hidden;
+          opacity: 0;
+        }
+      }
+    }
+  }
+  .aboutUsContainer {
+    max-width: 700px;
+    margin: 10px auto;
+    padding: 100px 0;
+    h1 {
+      font-size: 35px;
+      text-align: center;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+footer {
+  p {
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(720deg);
+  }
+}
