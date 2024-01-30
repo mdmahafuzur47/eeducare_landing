@@ -1,0 +1,21 @@
+User Name: barakaheatery
+Passwd: Barakah@1122
+
+Domain: barakaheatery.com
+| Ip: 172.104.51.122 (n)
+| HasCgi: y
+| UserName: barakaheatery
+| PassWord: Barakah@1122
+| cPanel URL: https://s1092.sgp7.mysecurecloudhost.com:2083
+| CpanelMod: jupiter
+| HomeRoot: /home2
+| Quota: 97.66 GB
+| NameServer1: ns1.mysecurecloudhost.com
+| NameServer2: ns2.mysecurecloudhost.com
+| NameServer3: ns3.mysecurecloudhost.com
+| NameServer4: ns4.mysecurecloudhost.com
+| Contact Email: sharifulhira@gmail.com
+| Package: paradis1_Shared 5GB
+| Feature List: default
+| Account Enhancements: None
+| Language: en

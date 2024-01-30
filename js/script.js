@@ -14,12 +14,10 @@ window.addEventListener("load", function () {
 });
 
 const imgArray = [
-  "accets/image/1 (1).webp",
-  "accets/image/1 (2).webp",
-  "accets/image/1 (3).webp",
-  "accets/image/1 (4).webp",
-  "accets/image/1 (5).webp",
-  "accets/image/1 (6).webp",
+  "accets/image/1.jpg",
+  "accets/image/2.jpg",
+  "accets/image/3.jpg",
+  "accets/image/4.jpg",
 ];
 
 function changeImg() {
