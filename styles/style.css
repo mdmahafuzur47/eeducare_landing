@@ -23,6 +23,7 @@
 #main {
   width: 100%;
   min-height: 100vh;
+  position: relative;
 }
 #main .mainContainer {
   height: 100vh;
@@ -70,7 +71,24 @@
   transition: all 2s ease-in-out 1s;
   font-size: 20px;
   text-align: center;
-  margin: 0 10px;
+  margin: 15px 10px;
+}
+#main .mainContainer .div-1 .mainContent .para-gap {
+  margin-bottom: 30px;
+}
+#main .mainContainer .div-1 .mainContent h1 {
+  height: 30px;
+  opacity: 1;
+  transition: all 2s ease-in-out 1s;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+@media (max-width: 700px) {
+  #main .mainContainer .div-1 .mainContent h1 {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 #main .mainContainer .div-1 .mainContent button {
   opacity: 1;
@@ -126,31 +144,15 @@
   width: 250px;
   -webkit-user-drag: none;
 }
+#main .displayLoader .div-1 .mainContent h1,
 #main .displayLoader .div-1 .mainContent p,
 #main .displayLoader .div-1 .mainContent button {
   height: 0;
   overflow: hidden;
   opacity: 0;
 }
-#main .aboutUsContainer {
-  max-width: 700px;
-  margin: 10px auto;
-  padding: 100px 0;
-}
-#main .aboutUsContainer h1 {
-  font-size: 35px;
-  text-align: center;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-#main .aboutUsContainer p {
-  text-align: center;
-  font-size: 20px;
-}
-
-footer p {
-  text-align: center;
-  padding: 20px 0;
+#main .displayLoader footer {
+  opacity: 0;
 }
 
 @keyframes rotateAnimation {
